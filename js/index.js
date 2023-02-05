@@ -6,7 +6,9 @@ class Tasks {
     this._todos = todos;
   }
 
-  // your code
+  get csvString() {
+    return this._todos.join(", ");
+  }
 }
 
 // Sample usage - do not modify
